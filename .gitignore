@@ -77,6 +77,7 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+*.ipynb
 
 # IPython
 profile_default/
@@ -93,12 +94,6 @@ ipython_config.py
 #   having no cross-platform support, pipenv may install dependencies that don't work, or not
 #   install all needed dependencies.
 #Pipfile.lock
-
-# UV
-#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#uv.lock
 
 # poetry
 #   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
@@ -165,7 +160,108 @@ cython_debug/
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
+.idea/
+
+# VSCode
+.vscode/
 
 # PyPI configuration file
 .pypirc
+
+# ===================================================
+# PROJECT SPECIFIC EXCLUSIONS
+# ===================================================
+
+# Data and model directories
+artifacts/
+data/
+logs/
+models/
+notebooks/
+tests/
+weights/
+output/
+
+# Keep directory structure but not contents
+# !artifacts/.gitkeep
+# !data/.gitkeep
+# !logs/.gitkeep
+# !models/.gitkeep
+# !notebooks/.gitkeep
+# !tests/.gitkeep
+# !weights/.gitkeep
+# !output/.gitkeep
+
+# Docker related
+.dockerignore
+docker-compose.yml
+
+# Media files
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+
+# Model files (large binary files)
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.pb
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+
+# Configuration files
+*.yml
+*.yaml
+*.json
+*.ini
+*.cfg
+*.conf
+
+# Exception for GitHub workflows
+!.github/workflows/*.yml
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# IDE specific
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Local development files
+local_config.py
+secrets.py
+credentials.json
+token.json
+*.key
+*.pem
+
+# Backup files
+*~
+*.bak
+*.backup
+
+# Python test files
+main.py
+test_annotator.py
+test_streamlit.py
+
+# Text files
+commit.txt
