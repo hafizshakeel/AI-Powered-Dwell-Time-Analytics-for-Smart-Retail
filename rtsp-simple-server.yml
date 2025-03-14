@@ -1,0 +1,4 @@
+protocols: [tcp]
+paths:
+  all:
+    source: publisher
