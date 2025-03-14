@@ -6,25 +6,10 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.30.0+-red.svg)](https://streamlit.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A comprehensive solution for tracking and analyzing how long people spend in defined zones within retail environments using computer vision and deep learning.
+RDT uses AI-driven computer vision to track and analyze dwell time, providing real-time insights for retail.
 
 ![System Demo](assets/rtd-output.gif)
 
-## 🛒 Practical Applications
-
-RDT provides valuable insights for retail businesses through several practical applications:
-
-- **Customer Behavior Analysis**: Understand shopping patterns, browsing habits, and how customers navigate through your store
-- **Product Placement Optimization**: Identify high-traffic areas to strategically place high-margin products or promotions
-- **Queue Management**: Monitor waiting times in checkout areas and optimize staffing accordingly
-- **Store Layout Effectiveness**: Measure the impact of store layout changes on customer flow and dwell time
-- **Marketing ROI Measurement**: Quantify engagement with promotional displays and marketing materials
-- **Staff Allocation**: Deploy employees efficiently based on real-time customer traffic patterns
-- **Conversion Rate Optimization**: Correlate dwell time with sales data to identify optimal engagement thresholds
-- **Peak Hour Analysis**: Understand busy periods to optimize staffing and inventory management
-- **Competitive Benchmarking**: Compare performance metrics across different store locations
-
-By leveraging these insights, retailers can make data-driven decisions to enhance customer experience, optimize operations, and increase sales.
 
 ## 📋 Table of Contents
 
@@ -208,27 +193,6 @@ The training pipeline:
 
 You can configure training parameters in `customer_vision/constants/training_pipeline/__init__.py`.
 
-## 🚀 Performance Tips
-
-- For real-time processing, use a smaller model (YOLOv8n)
-- Using a GPU will significantly improve performance
-- Only track the classes you need (e.g., just people)
-- For high-resolution videos, consider reducing the resolution
-- Increase the display frequency in the Streamlit app to reduce rendering overhead
-- Process shorter video clips for faster results
-- For RTSP streams, ensure your network connection is stable
-
-## 🔍 Troubleshooting
-
-| Issue | Solution |
-|-------|----------|
-| **No objects detected** | Try lowering the confidence threshold or using a different model |
-| **Tracking errors** | Make sure the video quality is good with sufficient lighting |
-| **RTSP connection fails** | Verify the URL is correct and the stream is active |
-| **Slow processing speed** | Use a smaller model, GPU, or increase display frequency |
-| **Application crashes with large videos** | Process a shorter clip or use a smaller model |
-| **Docker issues** | Make sure Docker is running before using RTSP streaming |
-| **FFmpeg not found** | Ensure FFmpeg is installed and in your PATH |
 
 ## ☁️ Deployment
 
@@ -283,13 +247,11 @@ newgrp docker
 - 🧠 On-device TensorRT optimization
 - 🔐 Privacy-preserving blur filter
 - 📈 Advanced behavioral analytics
-- 🔄 Real-time API for integration with other systems
 
 
 ## 🙏 Acknowledgments
 - [YOLOv8](https://github.com/ultralytics/ultralytics) - State-of-the-art object detection
 - [ByteTrack](https://github.com/ifzhang/ByteTrack) - Multi-object tracking
-- [InsightFace](https://github.com/deepinsight/insightface) - Demographics analysis
 - [Streamlit](https://streamlit.io/) - Web interface framework
 - [Supervision](https://github.com/roboflow/supervision) - Computer vision utilities
 - Special thanks to the open-source community!
