@@ -1,4 +1,4 @@
-# 🕒 RDT - Real-Time Dwell Time Analysis for Retail Environments
+# 🕒 RDT - AI-Powered Dwell Time Analytics for Smart Retail
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-brightgreen.svg)](https://github.com/ultralytics/ultralytics)
