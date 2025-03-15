@@ -66,7 +66,7 @@ calculate_zone_time/
 
 ```bash
 # Clone the repository
-git clone https://github.com/hafizshakeel/Real-Time-Dwell-Time-Analysis-for-Retail-Environments
+git clone https://github.com/hafizshakeel/AI-Powered-Dwell-Time-Analytics-for-Smart-Retail.git
 cd zone-time-calculation
 
 # Create and activate virtual environment

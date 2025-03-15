@@ -51,7 +51,7 @@ The Wait Time Analysis Streamlit application provides a comprehensive, user-frie
 
 ```bash
 # Clone the repository
-git clone https://github.com/hafizshakeel/Real-Time-Dwell-Time-Analysis-for-Retail-Environments
+git clone https://github.com/hafizshakeel/AI-Powered-Dwell-Time-Analytics-for-Smart-Retail.git
 cd Real-Time-Dwell-Time-Analysis-for-Retail-Environments
 
 # Create and activate virtual environment

@@ -94,8 +94,8 @@ RDT/
 
 ```bash
 # Clone the repository
-git clone https://github.com/hafizshakeel/Real-Time-Dwell-Time-Analysis-for-Retail-Environments
-cd Real-Time-Dwell-Time-Analysis-for-Retail-Environments
+git clone https://github.com/hafizshakeel/AI-Powered-Dwell-Time-Analytics-for-Smart-Retail.git
+cd AI-Powered-Dwell-Time-Analytics-for-Smart-Retail
 
 # Create and activate virtual environment
 python -m venv venv

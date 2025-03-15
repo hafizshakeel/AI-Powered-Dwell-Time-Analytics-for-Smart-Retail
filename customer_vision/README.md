@@ -84,8 +84,8 @@ The training pipeline follows these key steps:
 
 ```bash
 # Clone the repository
-git clone https://github.com/hafizshakeel/Real-Time-Dwell-Time-Analysis-for-Retail-Environments
-cd customer-vision
+git clone https://github.com/hafizshakeel/AI-Powered-Dwell-Time-Analytics-for-Smart-Retail.git
+cd customer_vision
 
 # Create and activate virtual environment
 python -m venv venv
